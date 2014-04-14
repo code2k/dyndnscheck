@@ -8,7 +8,10 @@ module.exports = function (grunt) {
     watch: {
       run: {
         files: ['*.go'],
-        tasks: ['exec:run']
+        tasks: ['exec:run'],
+        options: {
+          spawn: false,
+        },
       },
       gruntfile: {
         files: ['Gruntfile.js']
