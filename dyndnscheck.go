@@ -88,7 +88,7 @@ func sendMail(subject string, message string) {
 		[]byte("Subject: "+subject+"\n\n"+message))
 
 	if err != nil {
-		log.Printf("sendMail: %v", err)
+		log.Fatal("sendMail: %v", err)
 	}
 
 }
