@@ -1,0 +1,10 @@
+{
+  "DynDNSHost":    "your DynsDNS host",
+  "CurrentIPURL":  "http://icanhazip.com",
+  "EMailFrom":     "",
+  "EMailTo":       "",
+  "EMailSubject":  "DynDNS check failed!",
+  "EMailServer":   "your SMTP server",
+  "EMailPort":     587,
+  "EMailPassword": ""
+}

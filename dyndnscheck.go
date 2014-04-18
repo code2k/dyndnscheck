@@ -49,13 +49,13 @@ const (
 )
 
 type Config struct {
-	DynDNSHost    string
-	CurrentIPURL  string
+	DynDNSHost    string // your DynDNS host. e.g. myhost.duckdns.org
+	CurrentIPURL  string // URL of an external IP service like http://ifconfig.me/ip
 	EMailFrom     string
 	EMailTo       string
 	EMailSubject  string
-	EMailServer   string
-	EMailPort     int
+	EMailServer   string // smtp.gmail.com
+	EMailPort     int    // 587
 	EMailPassword string
 }
 
