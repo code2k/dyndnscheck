@@ -45,7 +45,7 @@ import (
 )
 
 const (
-	VERSION string = "1.0"
+	VERSION string = "1.0.1"
 )
 
 type Config struct {
