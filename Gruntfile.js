@@ -34,6 +34,15 @@ module.exports = function (grunt) {
         },
         run_files: ['dyndnscheck.go']
       },
+      linuxarm: {
+        output: 'dyndnscheck',
+        env: {
+          GOARCH: 'arm',
+          GOARM: '7',
+          GOOS: 'linux'
+        },
+        run_files: ['dyndnscheck.go']
+      },
       windows: {
         output: 'dyndnscheck.exe',
         env: {
