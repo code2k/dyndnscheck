@@ -85,7 +85,10 @@ func sendMail(subject string, message string) {
 		auth,
 		config.EMailFrom,
 		[]string{config.EMailTo},
-		[]byte("Subject: "+subject+"\n\n"+message))
+		[]byte("From: "+config.EMailFrom+
+			"\nTo: "+config.EMailTo+
+			"\nSubject: "+subject+
+			"\n\n"+message))
 
 	if err != nil {
 		log.Fatal("sendMail: %v", err)
